@@ -27,7 +27,6 @@ int main()
     float cr;
     float ct;
     float s;
-    float lf;
     float r;
     float xr;
     float xb;
@@ -82,13 +81,12 @@ int main()
     scanf(" %f", &ct);
     printf("please enter fin semispan.\n");
     scanf(" %f", &s);
-    printf("please enter length from center of root chord to center of tip chord\n");
-    scanf(" %f", &lf);
     printf("please enter radius of rocket body at aft end.\n");
     scanf(" %f", &r);
     printf("please enter the distance between fin root leading edge and fin tip leading\n");
     printf("edge parallel to the rocket body.\n");
     scanf(" %f", &xr);
+    float lf = sqrtf((xr-0.5*ct)*(xr-0.5*ct)+s*s);
     printf("please enter the distance from nose cone tip to fin root chord leading edge.\n");
     scanf(" %f", &xb);
     printf("please enter the number of fins.\n");
